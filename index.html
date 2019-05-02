@@ -4,46 +4,67 @@
     <meta charset="UTF-8">
     <title>gulu</title>
     <style>
-        *{margin:0;padding: 0;box-sizing:border-box;}
-        html{
-            --button-height:32px;
-            --font-size:14px;
-            --button-bg:white;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
             --button-active-bg: #eee;
             --border-radius: 4px;
             --color: #333;
             --border-color: #999;
             --border-color-hover: #666;
         }
-        #app{
+
+        #app {
             margin: 20px;
         }
-        body{
-            font-size:var(--font-size);
+
+        body {
+            font-size: var(--font-size);
         }
 
+        .box {
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
 <div id="app">
-    <g-button :loading="loading1" @click="loading1=!loading1">
-       按钮
-    </g-button>
-    <g-button icon="settings" :loading="loading2" @click="loading2=!loading2">
-        按钮
-    </g-button>
-    <g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3=!loading3">
-        按钮
-    </g-button>
-    <g-icon name="download" >
-        按钮
-    </g-icon>
-    <g-button-group>
-        <g-button icon="left">上一页</g-button>
-        <g-button >更多</g-button>
-        <g-button icon="right" icon-position="right">下一页</g-button>
-    </g-button-group>
-    <div id="test"></div>
+    <div class="box">
+        <g-input value="张三"></g-input>
+        <g-input value="李四" :disabled="true"></g-input>
+        <g-input value="李四" :readonly="true"></g-input>
+    </div>
+    <div class="box">
+        <g-input value="王" error="姓名不能少于2个字"></g-input>
+    </div>
+    <div class="box">
+        <div>
+            <g-button :loading="loading1" @click="loading1=!loading1">
+                按钮
+            </g-button>
+            <g-button icon="settings" :loading="loading2" @click="loading2=!loading2">
+                按钮
+            </g-button>
+            <g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3=!loading3">
+                按钮
+            </g-button>
+            <g-icon name="download">
+                按钮
+            </g-icon>
+            <g-button-group>
+                <g-button icon="left">上一页</g-button>
+                <g-button>更多</g-button>
+                <g-button icon="right" icon-position="right">下一页</g-button>
+            </g-button-group>
+        </div>
+    </div>
 </div>
 </body>
 <script src="./src/app.js"></script>
