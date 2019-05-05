@@ -14,12 +14,13 @@
             },
             offset: {
                 type: [Number, String]
-            },
-            gutter: {
-                type: [Number, String]
             }
         },
-
+        data(){
+            return{
+                gutter:0,
+            }
+        },
         computed: {
             colClass(){
                 let {span,offset} = this
