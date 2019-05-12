@@ -26,21 +26,24 @@ Vue.component('g-content',Content)
 Vue.component('g-footer',Footer)
 Vue.component('g-toast',Toast)
 Vue.use(plugin)
-
+import createElement from 'vue'
+const h = createElement
 new Vue({
     el:'#app',
     data:{
         loading1:false,
         loading2:true,
         loading3:false,
-        message:''
+        message:'hi'
     },
     created(){
-
+        this.$toast('<strong>hi</strong>',{
+            enableHtml:false
+        })
     },
     methods:{
         showToast(){
-            this.$toast('我是message')
+
         }
     }
 })
