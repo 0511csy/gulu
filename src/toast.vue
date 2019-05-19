@@ -20,13 +20,13 @@
 
         props: {
             autoClose: {
-                type: Boolean,
-                default: true
-            },
-            autoCloseDelay: {
-                type: Number,
-                default: 50
-            },
+                type: [Number,Boolean],
+                default: 5,
+                validator(value){
+                    return value === false || value === Number;
+                }
+            }
+            ,
             closeButton:{
                 type:Object,
                 default(){
@@ -71,7 +71,7 @@
                 if (this.autoClose) {
                     setTimeout(() => {
                         this.close()
-                    }, this.autoCloseDelay * 1000)
+                    }, this.autoClose * 1000)
                 }
             },
             close() {

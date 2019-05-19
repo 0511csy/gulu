@@ -72,8 +72,8 @@ new Vue({
                     callback(){
                         console.log('他说他已经充值了')
                     },
-                    autoClose: true,
-                    autoCloseDelay: 3
+                    autoClose: 3,
+
                 }
             })
         }
