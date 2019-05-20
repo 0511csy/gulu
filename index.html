@@ -35,24 +35,24 @@
 
     </style>
     <!--<style>-->
-        <!--.demo{-->
-            <!--min-height: 100px;-->
-        <!--}-->
-        <!--.sider{-->
-            <!--background: #333;-->
-            <!--width: 200px;-->
-        <!--}-->
-        <!--.sider.slide-enter,.sider.slide-leave-to{-->
-            <!--margin-left: -150px;-->
-        <!--}-->
-        <!--.header{-->
-            <!--background: #999999;-->
-            <!--height: 100px;-->
-        <!--}-->
-        <!--.footer{-->
-            <!--background: #ccc;-->
-            <!--height: 50px;-->
-        <!--}-->
+    <!--.demo{-->
+    <!--min-height: 100px;-->
+    <!--}-->
+    <!--.sider{-->
+    <!--background: #333;-->
+    <!--width: 200px;-->
+    <!--}-->
+    <!--.sider.slide-enter,.sider.slide-leave-to{-->
+    <!--margin-left: -150px;-->
+    <!--}-->
+    <!--.header{-->
+    <!--background: #999999;-->
+    <!--height: 100px;-->
+    <!--}-->
+    <!--.footer{-->
+    <!--background: #ccc;-->
+    <!--height: 50px;-->
+    <!--}-->
 
     <!--</style>-->
 
@@ -61,8 +61,9 @@
 <div id="app" style="padding-left:100px">
     <div style="overflow:hidden;padding-top:150px;">
         <g-popover position="top">
-            <template slot="content">
+            <template slot="content" slot-scope="{close}">
                 <div>Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容</div>
+                <g-button @click="close">关闭</g-button>
             </template>
             <g-button>点我</g-button>
         </g-popover>
@@ -109,129 +110,8 @@
                 </template>
                 <g-button>点我</g-button>
             </g-popover>
+        </div>
     </div>
-
-
-
-
-
-    <!--<g-tabs :selected.sync="selectedTab" @update:selected="yyy">-->
-        <!--<g-tabs-head>-->
-            <!--<template slot="actions">-->
-                <!--<button>设置</button>-->
-            <!--</template>-->
-            <!--<g-tabs-item name="woman" disabled>-->
-                <!--<g-icon name="settings"></g-icon>美女-->
-            <!--</g-tabs-item>-->
-            <!--<g-tabs-item name="finance">-->
-                <!--财经-->
-            <!--</g-tabs-item>-->
-            <!--<g-tabs-item name="sports">-->
-                <!--体育-->
-            <!--</g-tabs-item>-->
-        <!--</g-tabs-head>-->
-        <!--<g-tabs-body>-->
-            <!--<g-tabs-pane name="woman">-->
-                <!--美女相关资讯-->
-            <!--</g-tabs-pane>-->
-            <!--<g-tabs-pane name="finance">-->
-                <!--财经相关资讯-->
-            <!--</g-tabs-pane>-->
-            <!--<g-tabs-pane name="sports">-->
-                <!--体育相关资讯-->
-            <!--</g-tabs-pane>-->
-        <!--</g-tabs-body>-->
-    <!--</g-tabs>-->
-
-    <!--<button @click="showToast1">top</button>-->
-    <!--<button @click="showToast2">middle</button>-->
-    <!--<button @click="showToast3">bottom</button>-->
-
-<!--<g-layout style="height:100vh;">-->
-
-    <!--<g-sider >sider</g-sider>-->
-    <!--<g-layout>-->
-        <!--<g-header >header</g-header>-->
-        <!--<g-content >content</g-content>-->
-        <!--<g-footer >footer</g-footer>-->
-    <!--</g-layout>-->
-
-<!--</g-layout>-->
-
-    <!--<div style="border:1px solid black">-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col  span="24"-->
-                   <!--:ipad="{span:8}"-->
-                   <!--:narrow-pc="{span:4}"-->
-                   <!--:pc="{span:2}"-->
-                   <!--:wide-pc="{span:1}"-->
-            <!--&gt;-->
-                <!--1-->
-            <!--</g-col>-->
-            <!--<g-col span="24"-->
-                   <!--:ipad="{span:16}"-->
-                   <!--:narrow-pc="{span:20}"-->
-                   <!--:pc="{span:22}"-->
-                   <!--:wide-pc="{span:23}"-->
-            <!--&gt;11-->
-            <!--</g-col>-->
-        <!--</g-row>-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="2"></g-col>-->
-            <!--<g-col span="22"></g-col>-->
-        <!--</g-row>-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="4">1</g-col>-->
-            <!--<g-col span="20">11</g-col>-->
-        <!--</g-row>-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="4">1</g-col>-->
-            <!--<g-col span="18" offset="2">11</g-col>-->
-        <!--</g-row>-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="4">1</g-col>-->
-            <!--<g-col span="8" offset="2">11</g-col>-->
-            <!--<g-col span="8" offset="2">11</g-col>-->
-        <!--</g-row>-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="4">1</g-col>-->
-            <!--<g-col span="4" offset="6">11</g-col>-->
-            <!--<g-col span="8" offset="2">11</g-col>-->
-        <!--</g-row>-->
-    <!--</div>-->
-    <!--<div class="box">-->
-        <!--<g-input v-model="message"></g-input>-->
-        <!--<p>{{message}}</p>-->
-    <!--</div>-->
-    <!--<div class="box">-->
-        <!--<g-input value="张三"></g-input>-->
-        <!--<g-input value="李四" :disabled="true"></g-input>-->
-        <!--<g-input value="李四" :readonly="true"></g-input>-->
-    <!--</div>-->
-    <!--<div class="box">-->
-        <!--<g-input value="王" error="姓名不能少于2个字"></g-input>-->
-    <!--</div>-->
-    <!--<div class="box">-->
-        <!--<div>-->
-            <!--<g-button :loading="loading1" @click="loading1=!loading1">-->
-                <!--按钮-->
-            <!--</g-button>-->
-            <!--<g-button icon="settings" :loading="loading2" @click="loading2=!loading2">-->
-                <!--按钮-->
-            <!--</g-button>-->
-            <!--<g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3=!loading3">-->
-                <!--按钮-->
-            <!--</g-button>-->
-            <!--<g-icon name="download">-->
-                <!--按钮-->
-            <!--</g-icon>-->
-            <!--<g-button-group>-->
-                <!--<g-button icon="left">上一页</g-button>-->
-                <!--<g-button>更多</g-button>-->
-                <!--<g-button icon="right" icon-position="right">下一页</g-button>-->
-            <!--</g-button-group>-->
-        <!--</div>-->
-    <!--</div>-->
 </div>
 </body>
 <script src="./src/app.js"></script>

@@ -1,8 +1,8 @@
 <template>
     <div class="popover"  ref="popover">
         <div ref="contentWrapper" class="content-wrapper"  v-if="visible"
-        :class="{[`position-${position}`]:true}">
-            <slot name="content"></slot>
+        :class="{[`position-${position}`]:true}" >
+            <slot name="content" :close="close"></slot>
         </div>
         <span ref="triggerWrapper" style="display:inline-block">
             <slot></slot>
@@ -14,6 +14,23 @@
 <script>
     export default {
         name: "GuluPopover",
+        props:{
+            position:{
+                type: String,
+                default: 'top',
+                validator(value){
+                    return ['left','top','right','bottom'].indexOf(value) >= -1
+                }
+            },
+            trigger:{
+                type: String,
+                default: 'click',
+                validator(value){
+                    return ['click','hover'].indexOf(value) >= -1
+                }
+            }
+
+        },
         data(){
             return{
                 visible:false
@@ -35,22 +52,7 @@
               this.$refs.triggerWrapper.removeListener('mouseleave',this.close)
           }
       },
-        props:{
-            position:{
-                type: String,
-                default: 'top',
-                validator(value){
-                   return ['left','top','right','bottom'].indexOf(value) >= -1
-                }
-            },
-            trigger:{
-                type: String,
-                default: 'click',
-                validator(value){
-                    return ['click','hover'].indexOf(value) >= -1
-                }
-            }
-        },
+
         methods: {
             onclickDocument (e) {
                 if(this.$refs.popover &&
