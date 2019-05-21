@@ -29,11 +29,9 @@
             }
         },
         provide(){
-            if(this.single){
                 return{
                     eventBus: this.eventBus
                 }
-            }
         },
         mounted(){
             this.eventBus.$emit('update:selected',this.selected)
