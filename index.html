@@ -29,89 +29,76 @@
             font-size: var(--font-size);
         }
 
-        .box {
-            margin: 20px;
-        }
+
 
     </style>
-    <!--<style>-->
-    <!--.demo{-->
-    <!--min-height: 100px;-->
-    <!--}-->
-    <!--.sider{-->
-    <!--background: #333;-->
-    <!--width: 200px;-->
-    <!--}-->
-    <!--.sider.slide-enter,.sider.slide-leave-to{-->
-    <!--margin-left: -150px;-->
-    <!--}-->
-    <!--.header{-->
-    <!--background: #999999;-->
-    <!--height: 100px;-->
-    <!--}-->
-    <!--.footer{-->
-    <!--background: #ccc;-->
-    <!--height: 50px;-->
-    <!--}-->
 
-    <!--</style>-->
 
 </head>
 <body>
 <div id="app" style="padding-left:100px">
-    <div style="overflow:hidden;padding-top:150px;">
-        <g-popover position="top">
-            <template slot="content" slot-scope="{close}">
-                <div>Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容</div>
-                <g-button @click="close">关闭</g-button>
-            </template>
-            <g-button>点我</g-button>
-        </g-popover>
-        <g-popover position="bottom">
-            <template slot="content">
-                <div>Popover内容</div>
-            </template>
-            <g-button>点我</g-button>
-        </g-popover>
-        <g-popover position="left">
-            <template slot="content">
-                <div>Popover内容</div>
-            </template>
-            <g-button>点我</g-button>
-        </g-popover>
-        <g-popover position="right">
-            <template slot="content">
-                <div>Popover内容</div>
-            </template>
-            <g-button>点我</g-button>
-        </g-popover>
-        <div style="overflow:hidden;padding-top:150px;">
-            <g-popover position="top" trigger="hover">
-                <template slot="content">
-                    <div>Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容</div>
-                </template>
-                <g-button>点我</g-button>
-            </g-popover>
-            <g-popover position="bottom" trigger="hover">
-                <template slot="content">
-                    <div>Popover内容</div>
-                </template>
-                <g-button>点我</g-button>
-            </g-popover>
-            <g-popover position="left" trigger="hover">
-                <template slot="content">
-                    <div>Popover内容</div>
-                </template>
-                <g-button>点我</g-button>
-            </g-popover>
-            <g-popover position="right" trigger="hover">
-                <template slot="content">
-                    <div>Popover内容</div>
-                </template>
-                <g-button>点我</g-button>
-            </g-popover>
-        </div>
-    </div>
+    <g-collapse>
+        <g-collapse-item title="标题1">内容1</g-collapse-item>
+        <g-collapse-item title="标题2">内容2</g-collapse-item>
+        <g-collapse-item title="标题3">内容3</g-collapse-item>
+    </g-collapse>
+
+
+
+
+    <!--<div style="overflow:hidden;padding-top:150px;">-->
+        <!--<g-popover position="top">-->
+            <!--<template slot="content" slot-scope="{close}">-->
+                <!--<div>Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容</div>-->
+                <!--<g-button @click="close">关闭</g-button>-->
+            <!--</template>-->
+            <!--<g-button>点我</g-button>-->
+        <!--</g-popover>-->
+        <!--<g-popover position="bottom">-->
+            <!--<template slot="content">-->
+                <!--<div>Popover内容</div>-->
+            <!--</template>-->
+            <!--<g-button>点我</g-button>-->
+        <!--</g-popover>-->
+        <!--<g-popover position="left">-->
+            <!--<template slot="content">-->
+                <!--<div>Popover内容</div>-->
+            <!--</template>-->
+            <!--<g-button>点我</g-button>-->
+        <!--</g-popover>-->
+        <!--<g-popover position="right">-->
+            <!--<template slot="content">-->
+                <!--<div>Popover内容</div>-->
+            <!--</template>-->
+            <!--<g-button>点我</g-button>-->
+        <!--</g-popover>-->
+        <!--<div style="overflow:hidden;padding-top:150px;">-->
+            <!--<g-popover position="top" trigger="hover">-->
+                <!--<template slot="content">-->
+                    <!--<div>Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容</div>-->
+                <!--</template>-->
+                <!--<g-button>点我</g-button>-->
+            <!--</g-popover>-->
+            <!--<g-popover position="bottom" trigger="hover">-->
+                <!--<template slot="content">-->
+                    <!--<div>Popover内容</div>-->
+                <!--</template>-->
+                <!--<g-button>点我</g-button>-->
+            <!--</g-popover>-->
+            <!--<g-popover position="left" trigger="hover">-->
+                <!--<template slot="content">-->
+                    <!--<div>Popover内容</div>-->
+                <!--</template>-->
+                <!--<g-button>点我</g-button>-->
+            <!--</g-popover>-->
+            <!--<g-popover position="right" trigger="hover">-->
+                <!--<template slot="content">-->
+                    <!--<div>Popover内容</div>-->
+                <!--</template>-->
+                <!--<g-button>点我</g-button>-->
+            <!--</g-popover>-->
+        <!--</div>-->
+    <!--</div>-->
 </div>
 </body>
 <script src="./src/app.js"></script>
