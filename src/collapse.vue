@@ -36,19 +36,23 @@
         mounted(){
             this.eventBus.$emit('update:selected',this.selected)
             this.eventBus.$on('update:addselected',(name)=>{
-                this.selected.push(name)
-                this.$emit('update:selected',this.selected)
-                this.eventBus.$emit('update:selected',this.selected)
+                let selectedCopy = JSON.parse(JSON.stringify(this.selected))
+                if(this.single){
+                    selectedCopy =[name]
+                }else{
+                    selectedCopy.push(name)
+                }
+                this.$emit('update:selected',selectedCopy)
+                this.eventBus.$emit('update:selected',selectedCopy)
             })
             this.eventBus.$on('update:removeselected',(name)=>{
-                let index = this.selected.indexOf(name)
-                this.selected.splice(index,1)
-                this.$emit('update:selected',this.selected)
-                this.eventBus.$emit('update:selected',this.selected)
+                let selectedCopy = JSON.parse(JSON.stringify(this.selected))
+                let index = selectedCopy.indexOf(name)
+                selectedCopy.splice(index,1)
+                this.$emit('update:selected',selectedCopy)
+                this.eventBus.$emit('update:selected',selectedCopy)
             })
-            this.$children.forEach((vm)=>{
-                vm.single = this.single
-            })
+           
         }
     }
 </script>
