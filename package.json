@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/0511csy/gulu#readme",
   "dependencies": {
-    "vue": "^2.6.10",
+    "vue": "^2.5.16",
     "vue-hot-reload-api": "^2.3.3"
   },
   "devDependencies": {
@@ -41,7 +41,7 @@
     "sass": "^1.19.0",
     "sinon": "^7.3.2",
     "sinon-chai": "^3.3.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.5.16"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
