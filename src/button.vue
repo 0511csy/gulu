@@ -4,7 +4,7 @@
 
         <g-icon class="icon" v-if="icon && !loading" :name="icon"></g-icon>
         <g-icon class="loading icon" v-if="loading" name="loading"></g-icon>
-        <div class="content">
+        <div class="g-button-content">
             <slot/>
         </div>
     </button>
@@ -69,7 +69,7 @@
             order: 1;
             margin-right: .1em;
         }
-        > .content {
+        > .g-button-content {
             order: 2
         }
         &.icon-right {
