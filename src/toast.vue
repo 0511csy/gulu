@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" :class="toastClasses">
+    <div class="toast-wrapper" :class="toastClasses">
         <div class="toast" ref="toast" >
             <div class="message">
                 <slot v-if="!enableHtml"></slot>
@@ -23,7 +23,7 @@
                 type: [Number,Boolean],
                 default: 5,
                 validator(value){
-                    return value === false || value === Number;
+                    return value === false || typeof value === 'number';
                 }
             }
             ,
@@ -106,7 +106,8 @@
         0%{opacity:0;}
         100%{opacity:1;}
     }
-    .wrapper{
+    .toast-wrapper{
+        z-index: 30 !important;
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
