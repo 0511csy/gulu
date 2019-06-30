@@ -10,7 +10,7 @@ title: 网页布局 layout
 </ClientOnly>
 
 
-``` 
+``` html
  <div class="demo">
      <g-layout style="height:50vh;">
          <g-sider >sider</g-sider>
@@ -31,7 +31,7 @@ title: 网页布局 layout
 </ClientOnly>
 
 
-``` 
+``` html
  <div class="demo">
      <g-layout style="height:50vh;">
          <g-header>header</g-header>
@@ -53,7 +53,7 @@ title: 网页布局 layout
 </ClientOnly>
 
 
-``` 
+``` html
   <div class="demo">
          <g-layout style="height:50vh;">
              <g-sider>sider</g-sider>

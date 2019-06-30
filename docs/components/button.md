@@ -11,7 +11,7 @@ pageClass: custom-page-class
 </ClientOnly>
 
 
-``` 
+``` html
 <div>
     <g-button >默认按钮</g-button>
     <g-button icon="settings">默认按钮</g-button>
@@ -28,7 +28,7 @@ pageClass: custom-page-class
   <button-group-demos/>
 </ClientOnly>
 
-``` 
+``` html
 <div>
      <g-button-group>
         <g-button icon="left">上一页</g-button>

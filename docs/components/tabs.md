@@ -10,7 +10,7 @@ title: 标签 Tabs
 </ClientOnly>
 
 
-``` 
+``` html
 <div>
     <g-tabs :selected="selected">
         <g-tabs-head>

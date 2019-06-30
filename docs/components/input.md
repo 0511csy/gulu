@@ -10,7 +10,7 @@ title: 输入框 Input
 </ClientOnly>
 
 
-``` 
+``` html
  <div>
     <g-input value="张三"></g-input>
     <g-input value="李四" :disabled="true"></g-input>

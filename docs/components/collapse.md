@@ -10,7 +10,7 @@ title: 手风琴 collapse
 </ClientOnly>
 
 
-``` 
+```html 
  <div>
     <g-collapse :selected.sync="selected" single>
         <g-collapse-item title="标题1" name="1">内容1</g-collapse-item>
@@ -19,7 +19,7 @@ title: 手风琴 collapse
     </g-collapse>
 </div>
 ```
-``` 
+``` javascript
     data(){
              return {
                  selected:['2'],
@@ -35,7 +35,7 @@ title: 手风琴 collapse
 </ClientOnly>
 
 
-``` 
+``` html
      <div>
          <g-collapse :selected.sync="selectedTab" >
              <g-collapse-item title="标题1" name="1">内容1</g-collapse-item>
@@ -44,7 +44,7 @@ title: 手风琴 collapse
          </g-collapse>
      </div>
 ```
-``` 
+``` javascript
       data(){
             return {
                 selectedTab:['1','2']

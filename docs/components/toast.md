@@ -67,7 +67,7 @@ title: 提示框 Toast
 </ClientOnly>
 
 
-``` 
+``` html
   <div>
      <g-button @click="$toast('上方弹出',{position:'top'})">上方弹出</g-button>
      <g-button @click="$toast('中间弹出',{position:'middle'})">中间弹出</g-button>
@@ -83,7 +83,7 @@ title: 提示框 Toast
 </ClientOnly>
 
 
-``` 
+``` html
   <div>
       <g-button @click="$toast('<h1>hi</h1>',{enableHtml:true})">hi</g-button>
   </div>

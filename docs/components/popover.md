@@ -10,7 +10,7 @@ title: 弹出层 Popover
 </ClientOnly>
 
 
-``` 
+``` html
     <div style="overflow:hidden">
         <g-popover position="top">
             <template slot="content" >
@@ -47,7 +47,7 @@ title: 弹出层 Popover
 </ClientOnly>
 
 
-``` 
+``` html
     <div style="overflow:hidden;">
       <g-popover position="top" trigger="hover">
           <template slot="content">
@@ -84,7 +84,7 @@ title: 弹出层 Popover
 </ClientOnly>
 
 
-    ``` 
+    ``` html
     <div style="overflow:hidden">
        <g-popover position="top">
            <template slot="content" slot-scope="{close}">

@@ -10,7 +10,7 @@ title: 网格布局 Grid
 </ClientOnly>
 
 
-``` 
+``` html
   <div >
     <g-row>
         <g-col  span="12">
@@ -44,7 +44,7 @@ title: 网格布局 Grid
   <grid-demos-gutter/>
 </ClientOnly>
 
-```
+``` html
  <div>
     <g-row gutter="20">
         <g-col  span="12">
@@ -78,7 +78,7 @@ title: 网格布局 Grid
   <grid-demos-off/>
 </ClientOnly>
 
-```
+``` html
   <div>
     <g-row gutter="20">
         <g-col  span="12">
