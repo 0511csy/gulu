@@ -84,7 +84,7 @@ title: 弹出层 Popover
 </ClientOnly>
 
 
-    ``` html
+``` html
     <div style="overflow:hidden">
        <g-popover position="top">
            <template slot="content" slot-scope="{close}">
@@ -94,4 +94,4 @@ title: 弹出层 Popover
            <g-button>可以关闭浮层</g-button>
        </g-popover>
     </div>
-    ```
+```

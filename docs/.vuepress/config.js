@@ -1,13 +1,13 @@
 module.exports = {
-    title: 'Hello VuePress',
+    title: 'Hello Gulu UI',
     description: 'Just playing around',
-
+    base: "/gulu/" ,
     themeConfig: {
 
         nav: [
             { text: '主页', link: '/' },
             { text: '关于', link: '/about/' },
-            { text: 'Github', link: 'https://google.com' },
+            { text: 'Github', link: 'https://github.com/0511csy/gulu' },
         ],
         sidebar: [
             {

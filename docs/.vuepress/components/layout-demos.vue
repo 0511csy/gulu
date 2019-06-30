@@ -1,6 +1,6 @@
 <template>
     <div class="demo">
-        <g-layout style="height:50vh;">
+        <g-layout style="height:50vh;overflow: hidden;">
             <g-sider >sider</g-sider>
                 <g-layout>
                     <g-header >header</g-header>

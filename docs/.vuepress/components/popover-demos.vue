@@ -1,13 +1,6 @@
 <template>
     <div style="overflow:hidden">
         <g-popover position="top">
-            <template slot="content" slot-scope="{close}">
-                <div>Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容</div>
-                <g-button @click="close">关闭</g-button>
-            </template>
-            <g-button>上面弹出</g-button>
-        </g-popover>
-        <g-popover position="top">
             <template slot="content" >
                 <div>Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容Popover内容</div>
             </template>

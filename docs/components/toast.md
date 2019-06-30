@@ -10,7 +10,7 @@ title: 提示框 Toast
 </ClientOnly>
 
 
-``` 
+``` html
  <div>
      <g-button @click="$toast('可自动关闭')">demo</g-button>
  </div>
@@ -24,14 +24,14 @@ title: 提示框 Toast
 </ClientOnly>
 
 
-``` 
+``` html
    <div>
      <g-button @click="showToast1">top</g-button>
      <g-button @click="showToast2">middle</g-button>
      <g-button @click="showToast3">bottom</g-button>
  </div>
 ```
-``` 
+``` javascript
   methods:{
       showToast1(){
           this.showToast('top')

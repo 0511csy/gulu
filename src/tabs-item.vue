@@ -51,7 +51,7 @@
 
 <style scoped lang="scss">
     $disabled-text-color: grey;
-    $blue: blue;
+    $blue: #44c189;
 .tabs-item{
     flex-shrink: 0;
     padding: 0 1em;

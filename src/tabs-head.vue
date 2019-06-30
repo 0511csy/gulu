@@ -29,7 +29,7 @@
 </script>
 
 <style scoped lang="scss">
-    $blue: blue;
+    $blue:  #44c189;
     $tab-height: 40px;
     $border-color: #ddd;
     .tabs-head {
