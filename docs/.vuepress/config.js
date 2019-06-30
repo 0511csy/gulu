@@ -18,6 +18,7 @@ module.exports = {
                 ]
             },
             {
+                collapsable: false,
                 title: '组件',
                 children: [
                     '/components/button',
@@ -25,6 +26,7 @@ module.exports = {
                     '/components/grid',
                     '/components/layout',
                     '/components/toast',
+                    '/components/tabs',
                 ]
             }
         ]
