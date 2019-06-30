@@ -62,6 +62,7 @@
         display: flex;
         align-items: center;
         padding: 0 8px;
+        background: #43c087;
     }
     &:first-child
         >.title {
@@ -77,6 +78,7 @@
     }
     >.content{
         padding: 8px;
+
     }
 }
 </style>
