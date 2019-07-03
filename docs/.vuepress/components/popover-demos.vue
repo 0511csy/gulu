@@ -28,7 +28,7 @@
 </template>
 
 <script>
-    import Button from '../../../src/Button'
+    import Button from '../../../src/button'
     import Popover from '../../../src/popover'
 
     export default {

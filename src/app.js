@@ -42,8 +42,8 @@ Vue.component('g-popover',Popover)
 Vue.component('g-collapse',Collapse)
 Vue.component('g-collapse-item',CollapseItem)
 Vue.use(plugin)
-import createElement from 'vue'
-const h = createElement
+// import createElement from 'vue'
+// const h = createElement
 new Vue({
     el:'#app',
     data:{
@@ -53,6 +53,7 @@ new Vue({
         message:'hi',
         selectedTab:['2','1']
     },
+
     created(){
 
     },
