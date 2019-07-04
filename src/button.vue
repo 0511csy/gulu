@@ -73,7 +73,7 @@
             order: 2
         }
         &.icon-right {
-            > .content {
+            > .g-button-content {
                 order: 1
             }
             > .icon {
